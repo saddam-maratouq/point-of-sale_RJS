@@ -1,0 +1,11 @@
+li {
+    padding: 20px !important;
+}
+
+.active {
+    color: #F3B315 !important;
+}
+
+.logo {
+    width: 80px;
+}
