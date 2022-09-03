@@ -1,9 +1,8 @@
 .hero {
-    background-image: url(../../../assets/Images/hero-img.jpg);
+    background-image: url(../../../assets/Images/hero-img2.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.8;
-    min-height: calc( 100vh );
+  
 }
 
 span {
@@ -44,7 +43,7 @@ span {
     border-radius: 15px;
     border: 1px solid transparent;
     padding: 20px;
-    font-size: 17px;
+    font-size: 27px;
     min-width: 15%;
     font-weight: 800;
   transition: ease-in 1.5s;    

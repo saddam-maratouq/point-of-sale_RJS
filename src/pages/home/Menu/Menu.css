@@ -1,0 +1,23 @@
+.Menu {
+    min-height: 20vh;
+    
+}
+
+.Menu-title {
+    margin-bottom: 100px !important;
+}
+
+.Edit-img {
+    width: 121px;
+}
+
+.ro-effect {
+  transition: ease-in-out 1.5s;
+}
+
+img:hover {
+  
+   transform: scale(1.1);
+   background-color: #f3b315;
+   border-radius: 50px;
+}

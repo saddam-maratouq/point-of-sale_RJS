@@ -1,5 +1,6 @@
 import React from 'react'
 import Hero from './hero/Hero'
+import Menu from './Menu/Menu'
 
 
 
@@ -7,8 +8,10 @@ import Hero from './hero/Hero'
 
 const Home = () => {
   return (
+    <> 
      <Hero/> 
-     
+     <Menu/>
+     </>
   )
 }
 
