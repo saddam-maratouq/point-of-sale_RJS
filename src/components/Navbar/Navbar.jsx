@@ -4,6 +4,9 @@ import './Nav.css'
 //logo 
 import Logo from '../../assets/Images/food-logo.png'
 
+import { Link } from 'react-router-dom'
+
+
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg  navbar-dark bg-dark">
@@ -14,18 +17,22 @@ const Navbar = () => {
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ms-auto ">
+            {/* Home */}
           <li className="nav-item ">
-            <a className="nav-link active" aria-current="page" href="#">Home</a>
+            <Link className="nav-link active" aria-current="page" to='/Home' >Home</Link>
           </li>
+
+          {/* About */}
           <li className="nav-item">
-            <a className="nav-link" href="#">About Us</a>
-          </li>
+          <Link className="nav-link active" aria-current="page" to='/About' >About</Link>
+          </li> 
+
           <li className="nav-item">
-            <a className="nav-link" href="#">Explorer Foods</a>
+          <Link className="nav-link active" aria-current="page" to='/Pos' >Explorer Food</Link>
           </li>
           
           <li className="nav-item">
-            <a className="nav-link" href="#">Reviews</a>
+            <a className="nav-link" >Reviews</a>
           </li>
         </ul>
       </div>
