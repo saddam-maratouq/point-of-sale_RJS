@@ -21,35 +21,35 @@ const Menu = () => {
             <div className="row text-center ro-effect">
 
             <div className="col  co-effect">
-              <img src={pizaa} alt="pizza" srcset="" />
+              <img src={pizaa} alt="pizza"  className='menu-img' />
               <p   className='py-3 lead'> PIZZA </p>
             </div>
 
             <div className="col co-effect">
-              <img src={Sauces} alt="saus" srcset="" />
+              <img src={Sauces} alt="saus" className='menu-img' />
               <p className='py-3 lead'>SAUCES</p>
             </div>
 
 
             <div className="col co-effect">
-              <img src={compo} alt="compo" srcset="" />
+              <img src={compo} alt="compo"  className='menu-img' />
               <p className='py-3 lead'> COMPO </p>
             </div>
 
             <div className="col co-effect">
-              <img src={kidsFood} alt="kidsFood" srcset="" />
+              <img src={kidsFood} alt="kidsFood"  className='menu-img' />
               <p className='py-3 lead'> KIDDS FOOD </p>
             </div>
 
 
             <div className="col co-effect">
-              <img className='Edit-img' src={chicken} alt="chicken" srcset="" />
+              <img className='Edit-img  menu-img' src={chicken} alt="chicken"  />
               <p className='py-3 lead'> CHICKEN </p>
             </div>
 
 
             <div className="col co-effect">
-              <img className='Edit-img' src={BOXMeals} alt="BOXMeals" srcset="" />
+              <img className='Edit-img  menu-img' src={BOXMeals} alt="BOXMeals"   />
               <p className='py-3 lead'> BOX MEALS </p>
             </div>
 

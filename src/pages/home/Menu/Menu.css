@@ -15,7 +15,7 @@
   transition: ease-in-out 1.5s;
 }
 
-img:hover {
+.menu-img:hover {
   
    transform: scale(1.1);
    background-color: #f3b315;

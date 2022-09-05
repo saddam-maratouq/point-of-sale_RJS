@@ -1,0 +1,35 @@
+
+
+.food-img {
+    min-width: 70%;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.card {
+    max-width: 50% !important;
+    height: 350px;
+ text-align: start;
+   
+}
+
+.btn-card {
+    /* padding: 10px; */
+    background-color: #f3b315;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    padding:10px;
+   font-size: 17px;
+    min-width: 15%;
+  
+}
+
+a {
+    text-decoration: none;
+}
+
+.icon {
+    font-size: 17px;
+    margin-left: 10px;
+    text-align: center;
+}

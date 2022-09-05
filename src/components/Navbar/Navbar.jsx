@@ -24,11 +24,11 @@ const Navbar = () => {
 
           {/* About */}
           <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to='/About' >About</Link>
+          <Link className="nav-link " aria-current="page" to='/About' >About</Link>
           </li> 
 
           <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to='/Pos' >Explorer Food</Link>
+          <Link className="nav-link " aria-current="page" to='/Pos' >Explorer Food</Link>
           </li>
           
           <li className="nav-item">

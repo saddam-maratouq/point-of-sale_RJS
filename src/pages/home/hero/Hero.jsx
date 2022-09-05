@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="container">
         <div className="hero-content text-md-start text-center ">
            <p className='hero-title' > UNLIMTED </p>
-           <p className='hero-title'> FOOD <span> FAST </span> </p>
+           <p className='hero-title'> FAST <span> FOOD </span> </p>
            
            <p className='hero-info mb-5 ' > Medium Topping Pizza </p>
            <p className='hero-desc lead my-5' > * Additional charge for premium toppings</p>
