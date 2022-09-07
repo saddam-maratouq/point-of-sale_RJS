@@ -1,16 +1,20 @@
 
 
 .food-img {
-    min-width: 70%;
+    width: 200px;
     height: 200px;
-    border-radius: 15px;
+   border-radius: 15px;
 }
 
 .card {
     max-width: 50% !important;
     height: 350px;
- text-align: start;
+    text-align: start;
    
+}
+
+.price {
+    font-size: 20px;
 }
 
 .btn-card {
@@ -20,8 +24,8 @@
     border: 1px solid transparent;
     padding:10px;
    font-size: 17px;
-    min-width: 15%;
-  
+    /* min-width: 25%; */
+  text-align: center;
 }
 
 a {
@@ -33,3 +37,19 @@ a {
     margin-left: 10px;
     text-align: center;
 }
+
+
+
+
+/* // copy of card // */
+
+/* <div className=" my-3 " >
+<img src={Images} className="card-img-top food-img img-fluid" alt="food Images" />
+<div className="card-body">
+  <h5 className="card-title">{Mealname}</h5>
+  <p className="my-3 pb-3" > {price}$ </p> 
+  <a href="#" className=" btn-card btn-primary" onClick={ () => addFood(ele)}>
+    Add to list   <i class=" icon fa-sharp fa-solid fa-cart-shopping"></i>
+  </a>
+</div>
+</div> */

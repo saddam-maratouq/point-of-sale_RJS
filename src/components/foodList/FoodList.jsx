@@ -6,21 +6,19 @@ import './foodlist.css'
 
 
 
-const FoodList = ({ ele }) => {
+const FoodList = ({ ele ,addFood}) => {
 
-  const {Mealname,Images,price} = ele;
+  const {Mealname,Images,price} = ele; 
 
   return (
     
-    <div className="card my-3 " >
-      <img src={Images} className="card-img-top food-img" alt="food Images" />
-      <div className="card-body">
-        <h5 className="card-title">{Mealname}</h5>
-        <p className="my-3 pb-3" > {price}$ </p> 
-        <a href="#" className=" btn-card btn-primary">
-          Add to list   <i class=" icon fa-sharp fa-solid fa-cart-shopping"></i>
-        </a>
-      </div>
+    <div className="text-center my-5 " > 
+    <img  className="food-img img-fluid " src={Images} alt="food Imagess" />
+    <h3  className="my-3" > {Mealname} </h3>
+     <p className="price"> ${price}</p>
+     <button className="btn-card btn-danger " onClick={ () => addFood(ele)} >
+        Add  <i className=" icon fa-sharp fa-solid fa-cart-shopping"></i>
+     </button> 
     </div>
   );
 };
