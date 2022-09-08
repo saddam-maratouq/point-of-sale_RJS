@@ -26,7 +26,19 @@
    font-size: 17px;
     /* min-width: 25%; */
   text-align: center;
+  transition: ease-in-out 1s;
+ 
 }
+
+  .btn-card:hover {
+    transform: scale(1.1);
+  }
+
+  .bordring {
+    border-bottom: 1px solid gray;
+    width: 100%;
+    margin-top: 20px;
+  }
 
 a {
     text-decoration: none;
@@ -39,7 +51,23 @@ a {
 }
 
 
+@media screen and (max-width: 992px) {
+  .food-img {
+    width: 100%;
+    height: 500px;
+   border-radius: 15px;
+   margin-bottom: 20px;
+}
+}
 
+
+@media screen and (max-width: 500px) {
+  .food-img {
+    width: 100%;
+    height: 300px;
+   
+}
+}
 
 /* // copy of card // */
 
