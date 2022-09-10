@@ -16,10 +16,10 @@ const Navbar = () => {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav ms-auto ">
+        <ul className="navbar-nav ms-auto l ">
             {/* Home */}
           <li className="nav-item ">
-            <Link className="nav-link active" aria-current="page" to='/Home' >Home</Link>
+            <Link className="nav-link active " aria-current="page" to='/Home' >Home</Link>
           </li>
 
           {/* About */}
