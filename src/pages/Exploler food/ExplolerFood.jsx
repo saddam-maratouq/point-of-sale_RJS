@@ -138,7 +138,7 @@ const ExplolerFood = () => {
             <div className='col-lg-4 col-md-12'>
               {Cart.length > 0 ? (
                 <div className=' table-responsive '>
-                  <table className='table table-responsive  table-hover table-dark text-center w-100  bg-dark mt-5'>
+                  <table className='table table-responsive  table-hover table-dark text-center w-100   mt-5 ms-auto'>
                     <thead>
                       <tr> 
                         <th scope='col'>#</th>
