@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useRef } from 'react';
 
 import axios from 'axios';
 import { useEffect, useState } from 'react';
@@ -10,6 +10,17 @@ import CartList from '../../components/cartList/CartList';
 //css
 import './Exploler.css';
 
+// react tostify 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { ComponentToPrint } from '../../components/printReact/Componentprint';
+
+
+// react to print 
+import { useReactToPrint } from 'react-to-print';
+
+
+
 const ExplolerFood = () => {
   const [foodResult, setfoodResult] = useState([]);
 
@@ -18,6 +29,10 @@ const ExplolerFood = () => {
   const [Loading, setLoading] = useState(false);
 
   const [Total, setTotal] = useState(0);
+
+
+
+
 
   // function use to fetch data from api
   let fetchData = async () => {
@@ -53,11 +68,16 @@ const ExplolerFood = () => {
         if (cartItem.id === ele.id) {
           newItem = { ...cartItem };
           newcartfood.push(newItem);
+     
         } else {
           newcartfood.push(cartItem);
+         
         }
       });
       setCart(newcartfood);
+      
+    
+
     } else {
       let addingFood = {
         ...ele,
@@ -66,18 +86,26 @@ const ExplolerFood = () => {
       };
 
       setCart([...Cart, addingFood]);
+
+      toast.success(`${addingFood.Mealname} Added  `,{
+        autoClose: 2000,
+        pauseOnHover: false,
+      } );
     }
+
+  
   };
 
   // Delete Item from tabel
 
-  let deleteFood = async (clickedId) => {
+  let deleteFood =  (clickedId) => {
     const filterdedItem = Cart.filter((itemDeleted) => {
       return itemDeleted.id !== clickedId;
     });
-
+   
+   
     // update state
-    setCart(filterdedItem);
+    setCart(filterdedItem); 
   };
 
 
@@ -112,20 +140,30 @@ const ExplolerFood = () => {
     }
   };
 
+  
+  const componentRef = useRef(); 
+   
+  const handleReactPrint = useReactToPrint({
+    content: () => componentRef.current,
+  });
+
+
+
+  let handelPrint = () => handleReactPrint(); 
+  
+
   return (
-    <section className='pos'>
-      <div className='container'>
-        <div className='pos-content p-5'>
-          <div className='row'>
-            <div className='col-lg-8  '>
+    <section className="pos">
+      <div className="container">
+        <div className="pos-content p-5">
+          <div className="row">
+            <div className="col-lg-8  ">
               {Loading ? (
-                <i className=' fa-2x fa-sharp fa-solid fa-hourglass-start'></i>
-              )
-               : 
-              (
-                <div className='row'>
+                <i className=" fa-2x fa-sharp fa-solid fa-hourglass-start"></i>
+              ) : (
+                <div className="row">
                   {foodResult.map((ele) => (
-                    <div className='col-lg-4 col-md-12' key={ele.id}>
+                    <div className="col-lg-4 col-md-12" key={ele.id}>
                       <FoodList ele={ele} addFood={addFood} />
                     </div>
                   ))}
@@ -135,18 +173,26 @@ const ExplolerFood = () => {
 
             {/* tabel  */}
 
-            <div className='col-lg-4 col-md-12'>
+            <div className="col-lg-4 col-md-12">
+              {/* for print bell */}
+              <div style={{ display: "none" }}>
+                <ComponentToPrint
+                  Cart={Cart}
+                  Total={Total}
+                  ref={componentRef}
+                />
+              </div>
               {Cart.length > 0 ? (
-                <div className=' table-responsive '>
-                  <table className='table table-responsive  table-hover table-dark text-center w-100   mt-5 ms-auto'>
+                <div className=" table-responsive ">
+                  <table className="table table-responsive  table-hover table-dark text-center w-100   mt-5 ms-auto">
                     <thead>
-                      <tr> 
-                        <th scope='col'>#</th>
-                        <th scope='col'>Meal</th>
-                        <th scope='col'>price</th>
-                        <th scope='col'>total</th>
-                        <th scope='col'>Qty</th>
-                        <th scope='col'>X</th>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Meal</th>
+                        <th scope="col">price</th>
+                        <th scope="col">total</th>
+                        <th scope="col">Qty</th>
+                        <th scope="col">X</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -161,15 +207,28 @@ const ExplolerFood = () => {
                       ))}
                     </tbody>
                   </table>
-                  <h3 className='text-capitalize fw-bolder'>
+                  <h3 className="text-capitalize fw-bolder">
                     total : ${Total}
                   </h3>
                 </div>
               ) : (
-                <h3 className='fw-bolder text-muted'>
+                <h3 className="fw-bolder text-muted">
                   Your shopping cart is empty
                 </h3>
               )}
+              {Total !== 0 ? (
+                <div className="mt-3">
+                  <button
+                    className="btn btn-warning text-dark btn-lg "
+                    onClick={handelPrint}
+                  >
+                    pay now
+                  </button>
+                </div>
+              ) : (
+                ""
+              )}
+              <ToastContainer />
             </div>
           </div>
         </div>

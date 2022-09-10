@@ -13,7 +13,7 @@ const Hero = () => {
            <p className='hero-info mb-5 ' > Medium Topping Pizza </p>
            <p className='hero-desc lead my-5' > * Additional charge for premium toppings</p>
            <i className="fa-solid fa-basket-shopping-simple"></i> 
-            <button className='btn'> Order Now</button>
+            <button className='btn-p'> Order Now</button>
         </div>
       </div>
      </section>

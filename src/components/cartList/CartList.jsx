@@ -2,8 +2,9 @@ import React from 'react'
 
 const CartList = ({Cartfood,deleteFood,quantityHandler}) => {
 
+  console.log('cartFood is ... ',Cartfood);
     const {Mealname,price,totalAmount,quantity,id} = Cartfood; 
-  
+
 
     return (
       <>

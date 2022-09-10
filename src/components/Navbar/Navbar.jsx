@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
+    <> 
     <nav className="navbar navbar-expand-lg  navbar-dark bg-dark">
     <div className="container">
       <a> <img className='logo' src={Logo} alt="Logo" /> </a>
@@ -28,7 +29,7 @@ const Navbar = () => {
           </li> 
 
           <li className="nav-item">
-          <Link className="nav-link " aria-current="page" to='/Pos' >Explorer Food</Link>
+          <Link className="nav-link " aria-current="page" to='/Pos' >Explorer Food</Link> 
           </li>
           
           <li className="nav-item">
@@ -38,6 +39,8 @@ const Navbar = () => {
       </div>
     </div> 
   </nav>
+ 
+  </>
   )
 }
 

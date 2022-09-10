@@ -38,18 +38,19 @@ span {
 }
 
 
-.btn {
+.btn-p{
     background-color: #f3b315;
     border-radius: 15px;
     border: 1px solid transparent;
+    color: #fff;
     padding: 20px;
     font-size: 27px;
     min-width: 15%;
-    font-weight: 800;
+    font-weight: 600;
   transition: ease-in 1.5s;    
 }
 
-.btn:hover{
+.btn-p:hover{
     background-color: transparent;
     color: #fff;
 }
