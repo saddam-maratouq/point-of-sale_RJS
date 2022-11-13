@@ -7,7 +7,7 @@ const Hero = () => {
     <section className='hero ' > 
       <div className="container">
         <div className="hero-content text-md-start text-center ">
-           <p className='hero-title' > UNLIMTED </p>
+           <p className='hero-title' > UNLIMITED </p>
            <p className='hero-title'> FAST <span> FOOD </span> </p>
            
            <p className='hero-info mb-5 ' > Medium Topping Pizza </p>
@@ -20,4 +20,6 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero  
+
+

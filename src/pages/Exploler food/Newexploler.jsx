@@ -15,7 +15,7 @@ import './Exploler.css'
 
 
 
-const ExplolerFood = () => {
+const ExploreFood = () => {
   
   const [foodResult, setfoodResult] = useState([]); 
 
@@ -216,4 +216,4 @@ const ExplolerFood = () => {
   );
 };
 
-export default ExplolerFood;
+export default ExploreFood;
