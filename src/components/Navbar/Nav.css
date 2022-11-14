@@ -19,9 +19,21 @@ a {
     cursor: pointer;
 }
 
+.navbar-nav  {
+    font-size: 20px;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+
+/*  back to make link toglle active  */
 .active {
     color: #F3B315 !important;
 }
+
+
 
 .logo {
     width: 80px;

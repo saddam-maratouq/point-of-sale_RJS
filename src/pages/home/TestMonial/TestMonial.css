@@ -1,25 +1,51 @@
 #Review {
     background-color: #1F1D23;
-    padding: 10% 7%;
 }
 
 
 .carousel-inner {
     text-align: center;
+    padding: 10%;
+
 }
 
 .carousel-item img {
-   width: 100px;
+   width: 10%;
     border-radius: 50%;
     margin-top: 100px;
 }
 
-.hello {
-    font-size: 50px;
+.Review-text {
+    color: #478851;
+    font-size: 4rem;
+    line-height: 1.5;
 }
+
 
 .carousel-icon {
     height: 4rem;
     width: 4rem;
 }
 
+
+.person-name {
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 10px;
+    letter-spacing: 3px;
+}
+
+
+
+/* media query  */
+
+@media screen  and   (max-width:768px) {
+
+    .Review-text {
+        color: #478851;
+        font-size: 2.0rem;
+        line-height: 1.5;
+    }
+    
+
+}

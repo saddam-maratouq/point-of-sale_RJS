@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <section className='Navs' > 
-    <nav className="navbar navbar-expand-lg  navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg   bg-dark">
     <div className="container">
       <a> <img className='logo' src={Logo} alt="Logo" /> </a>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +20,7 @@ const Navbar = () => {
         <ul className="navbar-nav ms-auto l ">
             {/* Home */}
           <li className="nav-item ">
-            <Link className="nav-link active " aria-current="page" to='/Home' >Home</Link>
+            <Link className="nav-link  " aria-current="page" to='/Home' >Home</Link>
           </li>
 
           {/* About */}
