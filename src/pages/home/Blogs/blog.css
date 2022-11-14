@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,900;1,400&family=Montserrat:wght@900&display=swap');
+
+/* font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+ */
+
+* {
+    font-family: 'Lato', sans-serif;
+   
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 900;
+    color: #0E100F;
+    font-family: 'Lato', sans-serif;
+}
+
+
+#blog {
+    padding: 5% 2%;
+    
+}
+
+
+
+.blog-title-box {
+    margin-bottom: 200px;
+}
+
+.blog-title {
+    font-weight: 900;
+    font-family: 'lato',sans-serif;
+    font-size: 55px;
+    color: #0E100F;
+    margin-bottom: 30px;
+}
+
+.Explore-lorem {
+    font-size: 20px;
+    line-height: 2;
+}
+
+.card-Img {
+    border-radius: 2rem;
+    transition: 0.8s ease-in-out;
+    
+}
+
+/* vibrate animation  */
+
+@keyframes vibrate {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(-1deg); }
+    20% { transform: rotate(1deg); }
+    30% { transform: rotate(0deg); }
+    40% { transform: rotate(1deg); }
+    50% { transform: rotate(-1deg); }
+    60% { transform: rotate(0deg); }
+    70% { transform: rotate(-1deg); }
+    80% { transform: rotate(1deg); }
+    90% { transform: rotate(0deg); }
+    100% { transform: rotate(-1deg); }
+  }
+
+
+.card-Img:hover{
+   
+     margin-bottom: 10px;
+     /* Start the vibrate animation with duration 0.5 seconds */
+      animation: vibrate 2s;
+ 
+}
+
+

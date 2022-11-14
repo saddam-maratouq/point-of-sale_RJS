@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <> 
+    <section className='Navs' > 
     <nav className="navbar navbar-expand-lg  navbar-dark bg-dark">
     <div className="container">
       <a> <img className='logo' src={Logo} alt="Logo" /> </a>
@@ -40,7 +40,7 @@ const Navbar = () => {
     </div> 
   </nav>
  
-  </>
+  </section>
   )
 }
 

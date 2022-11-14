@@ -1,5 +1,22 @@
+
+.navs {
+ position: relative;  
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
 li {
     padding: 20px !important;
+}
+
+a {
+    cursor: pointer;
 }
 
 .active {
@@ -8,4 +25,13 @@ li {
 
 .logo {
     width: 80px;
+}
+
+.nav-link {
+    color: #fff;
+    transition: 0.7s ease-in;
+}
+
+.nav-link:hover{
+    color: #F3B315 !important ;
 }

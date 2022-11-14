@@ -7,7 +7,7 @@
 .burger-1 {
     width: 800px;
     border-radius: 10px;
-    margin-right: 30px;
+   
     height: 600px;
 }
 
@@ -18,10 +18,11 @@
     font-weight: 800;
     color: #478851;
     line-height: 1.5;
-    border: 1px solid red;
+   
     word-spacing: 3px;
-    margin-bottom: 10px;
-    /* margin-left: 20px; */
+    margin-bottom: 10px; 
+     margin-left: 20px;
+  
 
 }
 
@@ -35,6 +36,47 @@
  /* margin-left: 20px; */
 }
 
+
+/* Desc 2  row 2 */
+
+.row-2 {
+    margin-top: 230px;
+}
+
+
+.Desc-Title-2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #478851; 
+    line-height: 1.5;
+}
+
+
+.lorem-2 {
+    color: gray;
+ word-spacing: 3px;
+ font-size: 1.5rem;
+
+
+}
+
+.des-list li {
+    color: gray;
+    padding: 10px !important;
+}
+
+
+.des-list li::before {
+   
+    color: orange;
+    font-size: 1.5rem;
+    font-family: "Font Awesome 5 Free";
+    content: '\f00c';
+    display: inline-block;
+    padding-right: 13px;
+    vertical-align: middle;
+    font-weight: 900;
+}
 
 @media screen and (max-width: 900px) {
   
