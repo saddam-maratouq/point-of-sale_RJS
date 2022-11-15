@@ -1,0 +1,71 @@
+
+
+
+
+.cheef-wrapper {
+    padding: 100px 0;    
+}
+
+
+.chef-title {
+  font-size: 50px;
+  color: #0e100f;
+  font-weight: 800;
+  margin-bottom: 70px;
+  letter-spacing: 3px;
+}
+
+
+.card {
+    
+    min-width: 20rem;
+    height: 20rem;
+    transition: .8s ease-in;
+    margin: 6rem 2rem; 
+    border: none;
+}
+
+.card img {
+    
+    border-radius: 15px 15px 0 0;
+}
+
+
+.card-content {
+    background-color: #fff;
+}
+
+.card img:hover {
+    border-radius: 15px;
+}
+.card:hover {
+    transform: scale(1.1);
+    border-radius: 15px;
+
+}
+
+
+.card-content span {
+    color: gray;
+    font-size: 1.3rem;
+    
+}
+
+.card-content p {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+
+
+/* media query  */
+
+@media screen  and   (max-width:540px) {
+    .card {
+   
+    height: 350px;
+    margin-bottom: 150px;
+  
+
+    }   
+}

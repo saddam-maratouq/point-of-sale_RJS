@@ -17,7 +17,8 @@
 
 .Review-text {
     color: #478851;
-    font-size: 4rem;
+    /* font-size: 4rem; */
+    font-size: 40px;
     line-height: 1.5;
 }
 
