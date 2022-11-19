@@ -1,38 +1,32 @@
-import react from 'react'
-import './App.css'
+import react from "react";
+import "./App.css";
 
-import Navbar from './components/Navbar/Navbar'
-import Home from './pages/home/Home'
+// components
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./pages/home/Home";
+import Footer from "./components/Footer/Footer";
 
-import  ExploreFood from './pages/Exploler food/ExploreFood' 
+import ExploreFood from "./pages/Exploler food/ExploreFood";
 
+//routes
+import { Routes, Route } from "react-router-dom";
+import About from "./pages/About/About";
 
-//routes 
-import {   Routes , Route  } from "react-router-dom";
-import About from './pages/About/About'
-
- 
-
-
-function App() { 
- 
-
+function App() {
   return (
     <div className="App">
-    <Navbar/> 
-  
-  <Routes> 
-  <Route exact  path="/" element={<Home />} />
-  <Route exact  path="/Home" element={<Home />} />
-  <Route  exact   path="/About" element={<About/>} />
-  <Route exact  path="/Pos" element={<ExploreFood/>} />
-  </Routes>
- 
+      <Navbar />
+
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/Home" element={<Home />} />
+        <Route exact path="/About" element={<About />} />
+        <Route exact path="/Pos" element={<ExploreFood />} />
+      </Routes>
+
+      <Footer />
     </div>
-  )
+  );
 }
 
 export default App;
-
-
-

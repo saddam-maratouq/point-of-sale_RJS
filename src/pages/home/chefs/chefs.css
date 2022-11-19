@@ -1,71 +1,41 @@
-
-
-
-
-.cheef-wrapper {
-    padding: 100px 0;    
+#chefs {
+  padding: 280px 0;
+  min-height: 100vh;
 }
-
 
 .chef-title {
   font-size: 50px;
   color: #0e100f;
   font-weight: 800;
-  margin-bottom: 70px;
+  margin-bottom: 100px;
   letter-spacing: 3px;
 }
 
-
-.card {
-    
-    min-width: 20rem;
-    height: 20rem;
-    transition: .8s ease-in;
-    margin: 6rem 2rem; 
-    border: none;
+.cheef-wrapper .card {
+  max-width: 100% !important;
+  margin-bottom: 80px;
+  transition: 1s ease-in-out;
+  border: none;
 }
 
-.card img {
-    
-    border-radius: 15px 15px 0 0;
+.cheef-wrapper .card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
-
 
 .card-content {
-    background-color: #fff;
+  margin-top: 30px;
 }
 
-.card img:hover {
-    border-radius: 15px;
+.card-content h5 {
+  font-size: 25px;
 }
-.card:hover {
-    transform: scale(1.1);
-    border-radius: 15px;
-
-}
-
 
 .card-content span {
-    color: gray;
-    font-size: 1.3rem;
-    
+  font-size: 20px;
+  color: #0e100f;
 }
 
-.card-content p {
-    margin-top: 10px;
-    line-height: 1.5;
-}
-
-
-
-/* media query  */
-
-@media screen  and   (max-width:540px) {
-    .card {
-   
-    height: 350px;
-    margin-bottom: 150px;
-  
-
-    }   
+.cheef-wrapper .row {
+  --bs-gutter-y: 20rem !important;
 }
