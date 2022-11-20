@@ -10,7 +10,7 @@ import ExploreFood from "./pages/Exploler food/ExploreFood";
 
 //routes
 import { Routes, Route } from "react-router-dom";
-import About from "./pages/About/About";
+// import About from "./pages/About/About";
 
 function App() {
   return (
@@ -20,7 +20,6 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/Home" element={<Home />} />
-        <Route exact path="/About" element={<About />} />
         <Route exact path="/Pos" element={<ExploreFood />} />
       </Routes>
 
