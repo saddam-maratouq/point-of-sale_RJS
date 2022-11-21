@@ -1,28 +1,27 @@
 .Menu {
-    min-height: 20vh;
-    
+  min-height: 20vh;
 }
 
 .Menu-title {
-    margin-bottom: 100px !important;
-    font-size: 55px;
-    font-weight: 900;
-    font-family: 'lato',sans-serif;
-    color: #0E100F;
+  margin-bottom: 100px !important;
+  font-size: 55px;
+  font-weight: 900;
+  font-family: "lato", sans-serif;
+  /* color: #0e100f; */
+  color: var(--main-color);
 }
 
 .Edit-img {
-    width: 121px;
+  width: 121px;
 }
 
-.ro-effect {
-  transition: ease-in-out 1.5s;
+.co-effect {
+  transition: 3s ease-in-out;
 }
 
 .menu-img:hover {
-  
-   transform: scale(1.1);
-   background-color: #f3b315;
-   border-radius: 50px;
+  transform: scale(1.1);
+  background-color: #f3b315;
+  cursor: pointer;
+  border-radius: 50px;
 }
-

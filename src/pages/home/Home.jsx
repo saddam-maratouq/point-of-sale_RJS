@@ -1,29 +1,27 @@
-import React from 'react'
+import React from "react";
 
-//components 
-import Hero from './hero/Hero'
-import Menu from './Menu/Menu'
-import FoodDescrptions from './food Descrption/FoodDescrptions'
-import Blogs from './Blogs/Blogs'
-import Testimonial from './TestMonial/Testimonial'
-import Chefs from './chefs/Chefs'
+import home from "./home.css";
 
-
-
-
+//components
+import Hero from "./hero/Hero";
+import Menu from "./Menu/Menu";
+import FoodDescrptions from "./food Descrption/FoodDescrptions";
+import Blogs from "./Blogs/Blogs";
+import Testimonial from "./TestMonial/Testimonial";
+import Chefs from "./chefs/Chefs";
 
 const Home = () => {
-
   return (
-    <> 
-     <Hero/> 
-     <Menu/> 
-     <FoodDescrptions/> 
-     <Blogs/> 
-     <Testimonial/> 
-     <Chefs/>
-     </>
-  )
-}
+    // fix here width 100%
+    <div className=" home  ">
+      <Hero />
+      <Menu />
+      <FoodDescrptions />
+      <Blogs />
+      <Testimonial />
+      <Chefs />
+    </div>
+  );
+};
 
-export default Home
+export default Home;

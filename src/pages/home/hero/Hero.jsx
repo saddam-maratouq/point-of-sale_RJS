@@ -9,7 +9,7 @@ const Hero = () => {
         <div
           // Aos//
           data-aos="fade-up"
-          data-aos-delay="1500"
+          data-aos-delay="1000"
           className="hero-content text-md-start text-center "
         >
           <p className="hero-title"> UNLIMITED </p>

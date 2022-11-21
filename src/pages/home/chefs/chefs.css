@@ -5,7 +5,7 @@
 
 .chef-title {
   font-size: 50px;
-  color: #0e100f;
+  color: var(--main-color);
   font-weight: 800;
   margin-bottom: 100px;
   letter-spacing: 3px;
@@ -37,5 +37,5 @@
 }
 
 .cheef-wrapper .row {
-  --bs-gutter-y: 20rem !important;
+  --bs-gutter-y: 13rem !important;
 }

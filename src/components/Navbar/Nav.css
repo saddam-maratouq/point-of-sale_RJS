@@ -1,49 +1,45 @@
-
 .navs {
- position: relative;  
+  position: relative;
 }
 
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 li {
-    padding: 20px !important;
+  padding: 20px !important;
 }
 
 a {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.navbar-nav  {
-    font-size: 20px;
+.navbar-nav {
+  font-size: 20px;
 }
 
 .nav-link {
-    color: #fff;
+  color: #fff;
 }
-
 
 /*  back to make link toglle active  */
 .active {
-    color: #F3B315 !important;
+  color: #f3b315 !important;
 }
 
-
-
 .logo {
-    width: 80px;
+  width: 80px;
 }
 
 .nav-link {
-    color: #fff;
-    transition: 0.7s ease-in;
+  color: #fff !important ;
+  transition: 0.7s ease-in;
 }
 
-.nav-link:hover{
-    color: #F3B315 !important ;
+.nav-link:hover {
+  color: #f3b315 !important ;
 }

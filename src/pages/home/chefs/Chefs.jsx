@@ -13,8 +13,18 @@ import Alain from "../../../assets/Images/cheefs/chefs-3.jpg";
 const Chefs = () => {
   return (
     <section id="chefs">
-      <div className="cheef-wrapper">
-        <div className="container">
+      <div
+        className="cheef-wrapper"
+        // data-aos="fade-up"
+      >
+        <div
+          className="container"
+          data-aos-delay="1200"
+          // data-aos-duration="1000"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <h1 className="chef-title text-center "> Our chefs </h1>
 
           <div className="row pt-2 gx-md-5 gy-5  justify-content-between align-items-center ">

@@ -51,7 +51,9 @@ const Navbar = () => {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link">Reviews</a>
+                <a href="#Review" className="nav-link">
+                  Reviews
+                </a>
               </li>
             </ul>
           </div>

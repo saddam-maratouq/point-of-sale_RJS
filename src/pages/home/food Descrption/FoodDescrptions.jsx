@@ -28,9 +28,9 @@ const FoodDescrptions = () => {
 
             <div
               className="col-lg-6  col-md-12 text-sec "
-              data-aos="fade-left"
-              data-aos-easing="linear"
+              data-aos="fade-down "
               data-aos-duration="1500"
+              data-aos-delay="1000"
             >
               <h2 className="DesTitle-1">
                 We pride Ourselves on making <br /> real food from the Best{" "}

@@ -14,7 +14,7 @@ const Footer = () => {
           <span>Get connected with us on social networks:</span>
         </div>
 
-        <div>
+        <div className="d-flex  flex-column flex-md-row">
           <a href="" className="text-white me-4">
             <i className="fab fa-facebook-f"></i>
           </a>
