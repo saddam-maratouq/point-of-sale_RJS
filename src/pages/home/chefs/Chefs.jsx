@@ -13,13 +13,10 @@ import Alain from "../../../assets/Images/cheefs/chefs-3.jpg";
 const Chefs = () => {
   return (
     <section id="chefs">
-      <div
-        className="cheef-wrapper"
-        // data-aos="fade-up"
-      >
+      <div className="cheef-wrapper">
         <div
           className="container"
-          data-aos-delay="1200"
+          // data-aos-delay="1200"
           // data-aos-duration="1000"
           data-aos="fade-down"
           data-aos-easing="linear"

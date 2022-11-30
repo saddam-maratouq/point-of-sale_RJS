@@ -9,6 +9,7 @@ import FoodDescrptions from "./food Descrption/FoodDescrptions";
 import Blogs from "./Blogs/Blogs";
 import Testimonial from "./TestMonial/Testimonial";
 import Chefs from "./chefs/Chefs";
+import Contact from "./Contact us/Contact";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <Blogs />
       <Testimonial />
       <Chefs />
+      <Contact />
     </div>
   );
 };

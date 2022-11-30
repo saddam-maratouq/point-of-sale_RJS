@@ -1,25 +1,22 @@
-import React,{ useRef } from 'react';
+import React, { useRef } from "react";
 
-import axios from 'axios';
-import { useEffect, useState } from 'react';
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 // components
-import FoodList from '../../components/foodList/FoodList';
-import CartList from '../../components/cartList/CartList';
+import FoodList from "../../components/foodList/FoodList";
+import CartList from "../../components/cartList/CartList";
 
 //css
-import './Exploler.css';
+import "./Exploler.css";
 
-// react tostify 
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import { ComponentToPrint } from '../../components/printReact/Componentprint';
+// react tostify
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { ComponentToPrint } from "../../components/printReact/Componentprint";
 
-
-// react to print 
-import { useReactToPrint } from 'react-to-print';
-
-
+// react to print
+import { useReactToPrint } from "react-to-print";
 
 const ExploreFood = () => {
   const [foodResult, setfoodResult] = useState([]);
@@ -30,10 +27,6 @@ const ExploreFood = () => {
 
   const [Total, setTotal] = useState(0);
 
-
-
-
-
   // function use to fetch data from api
   let fetchData = async () => {
     setLoading(true);
@@ -41,7 +34,7 @@ const ExploreFood = () => {
       setLoading(false);
     }, 1500);
 
-    const URL = 'https://mocki.io/v1/f8865d8b-d457-4516-adb2-43f688bef580';
+    const URL = "https://mocki.io/v1/f8865d8b-d457-4516-adb2-43f688bef580";
     const result = await axios.get(URL);
     let foodList = result.data.foods;
     setfoodResult(foodList);
@@ -50,7 +43,6 @@ const ExploreFood = () => {
   useEffect(() => {
     fetchData();
   }, []);
-
 
   //function added  food  to  the tabel
 
@@ -68,16 +60,11 @@ const ExploreFood = () => {
         if (cartItem.id === ele.id) {
           newItem = { ...cartItem };
           newcartfood.push(newItem);
-     
         } else {
           newcartfood.push(cartItem);
-         
         }
       });
       setCart(newcartfood);
-      
-    
-
     } else {
       let addingFood = {
         ...ele,
@@ -87,27 +74,23 @@ const ExploreFood = () => {
 
       setCart([...Cart, addingFood]);
 
-      toast.success(`${addingFood.Mealname} Added  `,{
+      toast.success(`${addingFood.Mealname} Added  `, {
         autoClose: 2000,
         pauseOnHover: false,
-      } );
+      });
     }
-
-  
   };
 
   // Delete Item from tabel
 
-  let deleteFood =  (clickedId) => {
+  let deleteFood = (clickedId) => {
     const filterdedItem = Cart.filter((itemDeleted) => {
       return itemDeleted.id !== clickedId;
     });
-   
-   
-    // update state
-    setCart(filterdedItem); 
-  };
 
+    // update state
+    setCart(filterdedItem);
+  };
 
   // calc total
 
@@ -126,7 +109,7 @@ const ExploreFood = () => {
   const quantityHandler = (type, cartItem) => {
     const result = Cart.find((c) => c.id === cartItem.id);
 
-    if (type === 'plus') {
+    if (type === "plus") {
       result.quantity += 1;
       result.totalAmount = cartItem.price * (cartItem.quantity + 1);
       setCart([...Cart]);
@@ -140,17 +123,13 @@ const ExploreFood = () => {
     }
   };
 
-  
-  const componentRef = useRef(); 
-   
+  const componentRef = useRef();
+
   const handleReactPrint = useReactToPrint({
     content: () => componentRef.current,
   });
 
-
-
-  let handelPrint = () => handleReactPrint(); 
-  
+  let handelPrint = () => handleReactPrint();
 
   return (
     <section className="pos">

@@ -121,7 +121,8 @@ const Footer = () => {
                 }}
               />
               <p>
-                <i className="fas fa-home mr-3"></i> Miami , St 10012, US
+                <i className="fas fa-home mr-3"></i> Adam Street, New York, NY
+                535022
               </p>
               <p>
                 <i className="fas fa-envelope mr-3"></i> SqFood@gmail.com
