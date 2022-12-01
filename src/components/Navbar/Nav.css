@@ -1,13 +1,13 @@
-.navs {
+.Navs {
   position: relative;
 }
 
-nav {
-  position: fixed;
-  top: 0;
+.navbar {
+  position: fixed !important;
   left: 0;
-  right: 0;
-  z-index: 1000;
+  top: 0;
+  width: 100%;
+  z-index: 100000;
 }
 
 li {
@@ -27,9 +27,9 @@ a {
 }
 
 /*  back to make link toglle active  */
-.active {
+/* .active {
   color: #f3b315 !important;
-}
+} */
 
 .logo {
   width: 80px;
@@ -37,7 +37,7 @@ a {
 
 .nav-link {
   color: #fff !important ;
-  transition: 0.7s ease-in;
+  transition: 1.7s ease-in;
 }
 
 .nav-link:hover {
