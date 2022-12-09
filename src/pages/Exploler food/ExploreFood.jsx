@@ -132,7 +132,7 @@ const ExploreFood = () => {
   let handelPrint = () => handleReactPrint();
 
   return (
-    <section className="pos">
+    <section className="pos  ">
       <div className="container">
         <div className="pos-content p-5">
           <div className="row">

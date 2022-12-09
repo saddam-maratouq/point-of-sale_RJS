@@ -1,12 +1,17 @@
 import React from "react";
 import "./Nav.css";
 
+import { Link } from "react-router-dom";
+
 //logo
 import Logo from "../../assets/Images/food-logo.png";
 
-import { Link } from "react-router-dom";
+//auth0
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Navbar = () => {
+  const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
+
   return (
     <section className="Navs">
       <nav className="navbar navbar-expand-lg   navbar-dark bg-dark ">
@@ -54,6 +59,32 @@ const Navbar = () => {
                 <a href="#Review" className="nav-link">
                   Reviews
                 </a>
+              </li>
+
+              <li className="nav-item">
+                <Link className="nav-link" aria-current="page" to="/Home">
+                  {!isAuthenticated && (
+                    <button
+                      className="btn btn-warning "
+                      onClick={() => loginWithRedirect()}
+                    >
+                      login
+                    </button>
+                  )}
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link className="nav-link" aria-current="page" to="/Home">
+                  {isAuthenticated && (
+                    <button
+                      className="btn btn-danger "
+                      onClick={() => logout()}
+                    >
+                      log out{" "}
+                    </button>
+                  )}
+                </Link>
               </li>
             </ul>
           </div>
