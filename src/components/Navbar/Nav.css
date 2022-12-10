@@ -43,3 +43,31 @@ a {
 .nav-link:hover {
   color: #f3b315 !important ;
 }
+
+.btn-login {
+  padding: 5px 25px;
+  color: #fff;
+  background-color: #f3b315;
+  border: #f3b315;
+  border-radius: 18px;
+  font-size: 16px;
+  /* letter-spacing: 2px; */
+  text-align: center;
+  font-weight: 800;
+  transition: 1.2s ease-in;
+}
+.btn-login:hover {
+  transform: scale(1.1);
+}
+
+.btn-logout {
+  padding: 5px 25px;
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 18px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 800;
+  transition: 1.7s ease-in;
+}

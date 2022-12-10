@@ -65,10 +65,10 @@ const Navbar = () => {
                 <Link className="nav-link" aria-current="page" to="/Home">
                   {!isAuthenticated && (
                     <button
-                      className="btn btn-warning "
+                      className="  btn-login "
                       onClick={() => loginWithRedirect()}
                     >
-                      login
+                      Log in
                     </button>
                   )}
                 </Link>
@@ -78,10 +78,10 @@ const Navbar = () => {
                 <Link className="nav-link" aria-current="page" to="/Home">
                   {isAuthenticated && (
                     <button
-                      className="btn btn-danger "
+                      className=" btn-danger  btn-logout  "
                       onClick={() => logout()}
                     >
-                      log out{" "}
+                      Log out{" "}
                     </button>
                   )}
                 </Link>
